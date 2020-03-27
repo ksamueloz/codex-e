@@ -13,30 +13,34 @@ $('#formulary').on('submit', function (e) {
     });
 });
 function passwordSecure() {
-    Swal.fire({
-        title: "¡Ganaste, Completaste El Juego!",
-        html: `
-        <img class="img-fluid" src="../static/img/ganaste.png" alt="Ganaste">
-        <p class="h4">Muy bien hecho</p>`,
-        confirmButtonText: "Jugar de nuevo",
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-    })
+    Swal.fire(
+        'Contraseña segura',
+        'Tu contraseña es segura',
+        'success'
+    )
 };
 function passwordInsecure() {
-    swal({
-        title: 'Contraseña insegura',
-        text: 'Tu contraseña no es segura, prueba de nuevo',
-        icon: 'warning'
-    })
+    Swal.fire(
+        'Contraseña segura',
+        'Tu contraseña no es segura, prueba de nuevo',
+        'warning'
+    )
 };
 $(document).ready(function (){
     $('#btnInfo').click(function(){
-        swal({
-            title: '¿Cómo debería ser?',
-            text: 'La contraseña debe contener una letra mayúscula, seguido de 3 números, luego letras minúsculas ' +
-                  'y por último 3 carácteres especiales.',
-            icon: 'info'
-          })
+        Swal.fire(
+            'Contraseña segura',
+            'Introduzca una letra mayúscula seguida de 3 números, luego'+
+            ' añada letras minúsculas y por último 3 carácteres especiales',
+            'question',
+        )
+    });
+    $('#btnJuego').click(function(){
+        Swal.fire(
+            '¿Cómo jugar?',
+            'Haz click en las diferentes incognitas hasta que encuentres '+
+            'un par de imágenes iguales hasta finalizar',
+            'question',
+        )
     });
 });
