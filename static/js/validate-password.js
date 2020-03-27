@@ -13,10 +13,14 @@ $('#formulary').on('submit', function (e) {
     });
 });
 function passwordSecure() {
-    swal({
-        title: 'Contraseña segura',
-        text: 'Tu contraseña es segura',
-        icon: 'success'
+    Swal.fire({
+        title: "¡Ganaste, Completaste El Juego!",
+        html: `
+        <img class="img-fluid" src="../static/img/ganaste.png" alt="Ganaste">
+        <p class="h4">Muy bien hecho</p>`,
+        confirmButtonText: "Jugar de nuevo",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
     })
 };
 function passwordInsecure() {
