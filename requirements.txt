@@ -21,7 +21,6 @@ MarkupSafe==1.1.1
 monotonic==1.5
 pycrypto==2.6.1
 pygame==1.9.6
-PyGObject==3.32.0
 python-decouple==3.3
 python-dotenv==0.10.3
 pytz==2019.3
