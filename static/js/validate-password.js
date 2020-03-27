@@ -21,7 +21,7 @@ function passwordSecure() {
 };
 function passwordInsecure() {
     Swal.fire(
-        'Contraseña segura',
+        'Contraseña insegura',
         'Tu contraseña no es segura, prueba de nuevo',
         'warning'
     )
@@ -29,7 +29,7 @@ function passwordInsecure() {
 $(document).ready(function (){
     $('#btnInfo').click(function(){
         Swal.fire(
-            'Contraseña segura',
+            'Cómo debe ser?',
             'Introduzca una letra mayúscula seguida de 3 números, luego'+
             ' añada letras minúsculas y por último 3 carácteres especiales',
             'question',
