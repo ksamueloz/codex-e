@@ -39,4 +39,11 @@ $(document).ready(function (){
             icon: 'info'
           })
     });
+    $('#btnJugar').click(function(){
+        swal({
+            title: '¿Cómo jugar?',
+            text: 'De click en cualquier carta hasta que encuentre una similar',
+            icon: 'info'
+          })
+    })
 });
