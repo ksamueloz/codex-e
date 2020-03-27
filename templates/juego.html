@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block content %}
+<main role="main" class="container-fluid app-memorama" id="memorama">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Juego De Memoria</h1>
+            <p>
+                <span class="h5">
+                    Número de Intentos: <p id="intentos"> De 10</p>
+                </span>
+                <span class="h5">
+                    Imágenes Acertadas: <p id="aciertos"> </p>
+                </span> 
+                <br><a id="btnJugar" href="#">¿Cómo Jugar?</a>
+            </p>
+        </div>
+    </div>
+    <div v-for="(fila, coordenadaX) in memorama" :key="coordenadaX"
+        class="row">
+        <div :key="coordenadaX+''+coordenadaY" class="col-3"
+            v-for="(imagen, coordenadaY) in fila">
+            <div class="mb-3">
+                <img @click="voltear(coordenadaX, coordenadaY)"
+                    :class="{'girar': imagen.mostrar}"
+                    :src="(imagen.mostrar ? imagen.ruta :
+                    imagen_oculta)" class="card-img-top img-fluid
+                    img-thumbnail">
+            </div>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="../static/js/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="../static/js/vue.min.js"></script>
+<script type="text/javascript" src="../static/js/memorama.js"></script>
+{% endblock %}

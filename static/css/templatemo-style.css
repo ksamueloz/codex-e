@@ -1,0 +1,293 @@
+/* 
+
+Archivos CSS
+Kevin Samuel Ortiz - Luis Puello Palma
+--------------------------------------
+
+*/
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+    background: #e6e6e6;
+}
+
+a, button { transition: all 0.3s ease; }
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+p:last-child { margin-bottom: 0; }
+
+.tm-page-wrap { 
+    max-width: 1400px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.tm-container-outer {
+    max-width: 1400px;
+    margin: 0 auto;    
+}
+
+.tm-content-box { box-shadow: 0 0 3px rgba(0, 0, 0, 0.15); }
+.tm-text-gray { color: #787676; }
+
+.tm-text-highlight {
+    color: #c66995;
+    font-weight: 600;
+}
+
+.tm-bg-primary { background: #192b7e; }
+.tm-bg-highlight { background: #192b7e; }
+
+
+
+.btn-primary:hover { background: #192b7e; border-radius: 2%; }
+.tm-top-bar .navbar-expand-lg .navbar-nav .nav-link { padding: 10px 10px; }
+
+.tm-top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: 119px;
+    background: white;
+}
+
+.tm-top-bar.active {
+    height: 60px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link { padding: 1% }
+.tm-top-bar.active .navbar-brand { font-size: 1.4rem; }
+
+.tm-top-bar .navbar-brand img {
+    width: 60px;
+    height: auto;
+}
+
+.tm-top-bar.active .navbar-brand img { width: 40px; }
+.tm-top-bar-bg { height: 119px; }
+.tm-top-bar a { color: black; }
+
+.navbar-brand {
+	font-size: 2.2rem;    
+    text-transform: uppercase;    
+}
+
+.navbar {
+    font-weight: 700;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link.active, .nav-link:hover {	color: #69c6ba;	}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(104, 199, 187)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler { 
+    border-color: rgb(104, 199, 187);
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.tm-banner-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.tm-banner-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.tm-banner-header { color: white; }
+.tm-banner-overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.tm-banner-bg {
+    background: url(../img/banner.jpg) center top no-repeat;    
+    min-height: 720px;
+    position: relative;
+}
+.tm-banner-row { 
+    position: relative;
+    z-index: 100;
+    justify-content: center;
+    padding-top: 100px;
+}
+.tm-banner-row-header { text-align: center; }
+.tm-down-arrow-link { 
+    color: white;
+    background-color: #69c6ba;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.tm-down-arrow-link:hover,
+.tm-down-arrow-link:focus {
+    color: white;
+    background-color: blue;
+}
+
+/* Search form */
+select.tm-select.form-control:not([size]):not([multiple]) { height: 45px; }
+.form-control {
+    font-size: 0.8rem;
+    padding: .75rem;
+}
+label { font-weight: 700; }
+.tm-search-form {
+    background-color: #f5f6f6;
+    padding: 25px 25px 15px;
+    width: 100%;
+    max-width: 830px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 1%;
+}
+
+
+.tm-form-group-pad { padding: 0 8px; }
+
+.tm-form-group-2 { width: 50%; }
+.tm-form-group-3 { width: 25%; }
+
+
+.tm-btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 400;  
+    padding: 12px 20px;
+}
+
+
+
+
+
+.tm-btn-search { width: 100%; }
+
+.tm-btn-search:hover,
+.tm-btn-search:active,
+.tm-btn-search:focus {
+    background: rgb(7, 65, 199);
+}
+
+
+
+
+footer {
+    background: #2c2c2c;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;    
+    font-size: 0.8rem;
+}
+
+footer a { color: #fff; }
+
+footer a:hover { color: #900; }
+
+footer p { color: white; }
+
+.tm-footer-text-highlight {
+    color: white;
+    font-weight: 600;
+}
+
+.tm-footer-text-highlight:hover { color: #192b7e; }
+
+
+.form-control {
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.form-control:focus {
+    border-color: #69c6ba;
+    box-shadow: 0 0 0 0.1rem #69c6babf;
+}
+
+
+
+
+#validate-password {
+    font-size: 200%;
+}
+#inputCity {
+    width: 100%;
+}
+.btn-sam {
+    background-color: #007bff;
+    margin-bottom: 0.8%;
+}
+
+/*
+
+Diseño del Memorama
+
+*/
+img.card-img-top {
+    object-fit: cover;
+    cursor: pointer;
+    max-height: 40% !important;
+    max-width: 40% !important;
+    margin-left: 5%;
+}
+
+img.card-img-top.girar {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.app-memorama {
+    width: 90%;
+    height: 45%;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 1em 1em 1em 1em;
+    margin-bottom: 20%;
+}
+.app-memorama img {
+    border-radius: solid 5px gray;
+    width: 500% !important;
+}
+a *{
+    text-decoration: none !important;
+}
+.nav-link {
+    font-size: initial;
+}
+.banner-bg {
+    margin-top: 2%;
+}
+.tm-top-bar-bg {
+    margin-bottom: 2%;
+}
