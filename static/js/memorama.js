@@ -91,12 +91,10 @@ new Vue({
         // cuando el usuario gire la tarjeta
         cargarImagenes(imagenes) {
             // Mostrar la alerta
-            Swal.fire({
-                    title: "Cargando",
-                    html: `Cargando imágenes...`,
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                })
+            Swal.fire(
+                'Cargando',
+                'Cargando imágenes',
+            )
                 .then(this.jugar)
                 // Ponerla en modo carga
             Swal.showLoading();
