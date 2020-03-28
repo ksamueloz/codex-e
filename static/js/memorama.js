@@ -94,8 +94,7 @@ new Vue({
             Swal.fire(
                 'Cargando',
                 'Cargando imágenes',
-            )
-                .then(this.jugar)
+            ).then(this.jugar);
                 // Ponerla en modo carga
             Swal.showLoading();
 
