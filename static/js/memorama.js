@@ -92,14 +92,14 @@ new Vue({
         cargarImagenes(imagenes) {
             // Mostrar la alerta
             Swal.fire(
-                'Cargando',
+                'Imágenes',
                 'Cargando imágenes',
-            ).then(this.jugar);
+                'success',
+            ).then(this.jugar(imagenes))
                 // Ponerla en modo carga
-            Swal.showLoading();
 
 
-            let total = imagenes.length;
+            let total = this.imagenes.length;
             let contador = 0;
             let imagenesPrecarga = Array.from(imagenes);
             // También vamos a precargar la "espalda" de la tarjeta
@@ -113,7 +113,7 @@ new Vue({
                     if (contador >= total) {
                         // Si el contador >= total entonces se ha terminado la carga de todas
                         this.jugar(imagenes);
-                        Swal.close();
+               
                     }
                 });
                 // Agregamos la imagen y la removemos instantáneamente, así no se muestra
